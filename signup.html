@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Nema Yash Attendance Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <h1 class="text-center mb-4">Sign Up to Attendance Management</h1>
+
+            <div id="alertContainer"></div>
+
+            <form id="signupForm">
+                <div class="mb-3">
+                    <label for="signupUsername" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="signupUsername" placeholder="Enter your username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="signupPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="signupPassword" placeholder="Enter your password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="role" class="form-label">Role</label>
+                    <select class="form-select" id="role" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option value="faculty">Faculty</option>
+                        <option value="student">Student</option>
+                        <option value="hod">HOD</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+            </form>
+            <p class="text-center mt-3">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+</div>
+
+<script src="signup.js"></script>
+</body>
+</html>

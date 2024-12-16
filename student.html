@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom Styling */
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        .table th {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        .table td, .table th {
+            vertical-align: middle;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #218838;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+        .alert {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div id="alertContainer"></div>
+
+    <!-- Search Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="text-center">Student Attendance</h2>
+        </div>
+        <div class="col-12 col-md-6">
+            <input type="text" id="searchEnrollment" class="form-control" placeholder="Search by Name or Enrollment Number">
+        </div>
+        <div class="col-12 col-md-6">
+            <button id="searchBtn" class="btn btn-primary w-100">Search</button>
+        </div>
+    </div>
+
+    <!-- Attendance Statistics Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h5>Attendance Statistics</h5>
+            <p id="attendanceStats" class="text-muted">Total Present: 0 | Total Absent: 0</p>
+        </div>
+    </div>
+
+    <!-- Attendance Table Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <table class="table table-striped" id="attendanceTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th onclick="sortTable(1)">Name</th>
+                        <th onclick="sortTable(2)">Enrollment Number</th>
+                        <th>Branch</th>
+                        <th>Batch</th>
+                        <th>Gender</th>
+                        <th>Day</th>
+                        <th>Date</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Logout Button -->
+    <div class="row">
+        <div class="col-12">
+            <button id="logoutBtn" class="btn btn-danger w-100">Logout</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="student.js"></script>
+
+</body>
+</html>

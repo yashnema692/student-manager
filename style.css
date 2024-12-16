@@ -1,0 +1,43 @@
+/* styles.css */
+
+/* Centering the content */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+}
+
+/* Styling for the alert box */
+.alert {
+    margin-top: 20px;
+}
+
+/* Form elements styling */
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    border-radius: 8px;
+}
+
+/* Hover effects for buttons */
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Additional margins for links */
+.mt-3 a {
+    color: #007bff;
+}
+
+.mt-3 a:hover {
+    text-decoration: underline;
+}
